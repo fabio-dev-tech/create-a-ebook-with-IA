@@ -1,92 +1,70 @@
-<p align="center">
-    <img width="100" src=".github/assets/banner.png">
-</p>
+# 📚 Olho do Analista: Despertando o Verdadeiro Poder no MySQL
 
+Este repositório é o complemento prático do e-book **"Olho do Analista: Despertando o Verdadeiro Poder no MySQL"**.  
+O objetivo do material é levar você a um novo nível na análise de dados com MySQL, mesclando teoria e prática de forma acessível e eficiente.
 
-<p align="center">
-<a href="https://dio.me/"><img src="https://img.shields.io/badge/DIO-Course-28DA77?logo=youtube" alt="DIO - course"></a>
-<a href="https://www.gnu.org/software/bash/" title="Go to Bash homepage"><img src="https://img.shields.io/badge/Prompt-Project-blue?logo=gnu-bash&amp;logoColor=white" alt="Made with Bash"></a></p>
+## 🚀 O que você vai encontrar aqui
+- Todo o código SQL presente no e-book, organizado por capítulos e temas.
+- Scripts para criação e popular bancos de dados de treino.
+- Exemplos práticos para que você possa acompanhar passo a passo cada lição.
+- Instruções para preparar seu ambiente de prática.
 
--------
-
-
-<p align="center">
-<img 
-    src="./assets/cover.png"
-    width="400"  
-/>
-</p>
-
-# Projeto EBOOK Gerado por I.A.s
-
-
- > ℹ️ **NOTE:** Este é o repositório desenvolvido durante o curso no qual fui instrutor técnico na plataforma da [DIO](https://dio.me)
-
-Projeto com o objetivo de gerar um ebook digital com as facilidades das ferramentas de IA. todos os prompts
-seguem abaixo.
-
-<a href="https://github.com/felipeAguiarCode/prompts-recipe-to-create-a-ebook/blob/main/output/ebook%20-%20css%20jedi%20output.pdf" title="View PDF now"> 📕Clique aqui para ler</a>
-
-## 💻 Tecnologias utilizadas no projeto
-
-- [ChatGPT](https://chat.openai.com/) 
-- [MidJourney](https://www.midjourney.com/app/)
-- [PowerPoint](https://www.microsoft.com/en/microsoft-365/powerpoint)
-
-## 🧠 Prompts
-
-
-ChatGPT：
-
-|   Ação   | prompt                                                                                                                                                                                                                                                                         |
-| :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|  título  | Crie um título de um ebook sobre o tema de css, o ebookk é do nicho de programação e o subnicho é de css, o título deve ser épico e curto, e tenha uma temática de star wars no título, me liste 5 variações de títulos                                                        |
-| conteúdo | Faça um texto para ebook , com foco em CSS, listando os principais seletores CSS com exemplos em código {REGRAS} Explique sempre de uma maneira simples Deixe o texto enxuto, Sempre traga exemplos de código em contextos reais , sempre deixe um título sugestivo por tópico |
-
-
-Midjourney：
-
-|  Ação  | prompt                                                                                 |
-| :----: | -------------------------------------------------------------------------------------- |
-| título | A jedi in meditation pose, with your blue lightsaber floating, pixel art style --v 5.1 |
-
-## ✨ Features
-
-- Conteúdo gerado via ChatGPT
-- Imagens geradas via MidJourney
-
-## 📚 Materiais
-
-- Imagens utilizadas em `assets`
-- ebook gerado durante as aulas em `output`
-
-## 🛠️ Instruções de execução
-
-Utilize os prompts acima nas ferramentas sugeridas para gerar o material base e utilize uma ferramenta de edição de documentos como power point, libreoffice , indesign para diagramação.
-
-## 👨‍💻 Expert
-
-<p>
-    <img 
-      align=left 
-      margin=10 
-      width=80 
-      src="https://avatars.githubusercontent.com/u/37452836?v=4"
-    />
-    <p>&nbsp&nbsp&nbspFelipe Aguiar<br>
-    &nbsp&nbsp&nbsp
-    <a href="https://github.com/felipeAguiarCode">
-    GitHub</a>&nbsp;|&nbsp;
-    <a href="www.linkedin.com/in/
-felipe-exe">LinkedIn</a>
-&nbsp;|&nbsp;
-    <a href="https://www.instagram.com/felipeaguiar.exe/">
-    Instagram</a>
-&nbsp;|&nbsp;</p>
-</p>
-<br/><br/>
-<p>
+Este é um **guia prático**: leia o e-book para entender os conceitos e utilize este repositório para aplicar imediatamente o que aprendeu.
 
 ---
 
-⌨️ com 💜 por [Felipe Aguiar](https://github.com/felipeAguiarCode)
+## 📂 Organização do Repositório
+
+A estrutura é simples e organizada:
+
+```
+/capitulo-01/
+    exemplo-1.sql
+    exemplo-2.sql
+/capitulo-02/
+    exemplo-3.sql
+    exemplo-4.sql
+...
+/dataset/
+    criar_banco_treino.sql
+```
+
+- **Cada pasta** corresponde a um capítulo do e-book.  
+- Os arquivos `.sql` contêm exemplos diretamente executáveis no MySQL.  
+- A pasta **`/dataset/`** contém scripts para criação do banco de treino e inserção de dados fictícios.
+
+---
+
+## 🛠 Preparando o Ambiente de Treino
+
+Antes de iniciar, você precisará ter um ambiente MySQL pronto para executar os exemplos.
+
+### **1. Instalar MySQL Localmente**
+No Windows:
+```bash
+# Baixar o instalador
+# Link: https://dev.mysql.com/downloads/
+
+# Conectar após instalação
+mysql -u root -p
+```
+
+### **2. Usando Docker**
+Se preferir usar Docker para criar o ambiente isolado:
+```bash
+docker run --name mysql-treino   -e MYSQL_ROOT_PASSWORD=senha123   -e MYSQL_DATABASE=treino_db   -p 3306:3306   -d mysql:8.0
+```
+E conectar:
+```bash
+mysql -h 127.0.0.1 -u root -p
+```
+
+
+---
+
+💡 **Dica:** Sempre use o banco de treino para seus testes. Assim, você evita alterações acidentais em bases de produção.
+
+---
+
+Agora é só abrir o e-book, seguir os exemplos e executar os códigos deste repositório!  
+Bons estudos e boas consultas! 🚀

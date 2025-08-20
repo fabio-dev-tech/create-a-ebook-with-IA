@@ -1,0 +1,8 @@
+Escreva o conteúdo do e-book que estamos construindo para o tema:
+Preparando o ambiente de treino
+
+{Regras}
+- Vou solicitar um tema por vez
+- Texto é para pessoas de nível técnico
+- Usar linguagem amigável
+- Insira trechos de código como exemplo
